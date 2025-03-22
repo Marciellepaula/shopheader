@@ -1,1 +1,74 @@
-/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+$custom-colors: (
+  "primary-custom": #10404B,
+  "secondary-custom": #599AA8,
+  "whatsapp": #70AA7D,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/helpers";
+@import "../node_modules/bootstrap/scss/utilities/api";
+
+
+// .icon {
+//   width: 41px;
+//   height: 41px;
+//   background-color: #599AA8;
+//   border: 1px solid #007f92;
+//   border-radius: 50px;
+//   display: flex;
+//   align-content: center;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+// .custom-bg {
+//   background-color: #10404B;
+// }
+// .text-custom {
+//   color: #10404B;
+// }
+
+
+// .phone-container .phone-icon {
+//   background-color: #70AA7D;
+//   border-color: #489c5e;
+// }
+
+// .logo {
+//   max-width: 150px;
+//   height: auto;
+// }
+
+// .icon {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   width: 35px;
+//   height: 35px;
+//   border-radius: 50%;
+// }
+
+// @media (max-width: 992px) {
+//   .navbar-toggler {
+//     border: none;
+//     background: transparent;
+//   }
+//   .navbar-toggler:focus {
+//     outline: none;
+//     box-shadow: none;
+//   }
+// }
