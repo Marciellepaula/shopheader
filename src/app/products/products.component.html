@@ -1,12 +1,26 @@
 <div class="container my-5">
   <h4 class="fw-bold">Materiais Hospitalares</h4>
-  <div class="d-flex justify-content-between gap-4">
-    <app-product-card
-      *ngFor="let item of products"
-      [product]="item"
-    ></app-product-card>
-  </div>
-  <div class="text-end mt-3">
-    <a href="#" class="text-primary fw-bold">confira todos ></a>
+  <div class="col-12">
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let item of products">
+              <app-product-card [product]="item"></app-product-card>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="text-end mt-3">
+      <a href="#" class="text-primary fw-bold">Confira todos ></a>
+    </div>
   </div>
 </div>
