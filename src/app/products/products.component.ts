@@ -9,10 +9,10 @@ import { CommonModule } from '@angular/common';
 })
 export class ProductsComponent {
   products = [
-    { image: '/mascar.png', name: 'MASCARA TRIPLA ELASTICO C/50' },
-    { image: '/touca.png', name: 'TOUCA SANFONADA DESC. C/100' },
-    { image: '/agua.png', name: 'AGUA P/ AUTOCLAVE 5L' },
-    { image: '/gel.png', name: 'GEL P/ ULTRASSOM 5KG' },
+    { image: 'img/mascara.png', name: 'MASCARA TRIPLA ELASTICO C/50' },
+    { image: 'img/touca.png', name: 'TOUCA SANFONADA DESC. C/100' },
+    { image: 'img/agua.png', name: 'AGUA P/ AUTOCLAVE 5L' },
+    { image: 'img/gel.png', name: 'GEL P/ ULTRASSOM 5KG' },
   ];
 
 }
