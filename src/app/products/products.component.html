@@ -1,0 +1,12 @@
+<div class="container my-5">
+  <h4 class="fw-bold">Materiais Hospitalares</h4>
+  <div class="d-flex justify-content-between gap-4">
+    <app-product-card
+      *ngFor="let item of products"
+      [product]="item"
+    ></app-product-card>
+  </div>
+  <div class="text-end mt-3">
+    <a href="#" class="text-primary fw-bold">confira todos ></a>
+  </div>
+</div>
