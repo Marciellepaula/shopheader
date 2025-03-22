@@ -11,3 +11,60 @@
 .btn {
   font-size: 14px;
 }
+
+.carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: -350px;
+  margin-top: 20px;
+  position: absolute;
+  width: 100%;
+  bottom: -50px;
+  padding: 0 20px;
+}
+
+.custom-carousel-btn {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 150%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border: none;
+  width: 10px;
+  height: 10px;
+}
+
+.custom-carousel-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.custom-carousel-icon {
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+}
+
+.custom-indicators {
+  display: flex;
+  gap: 5px;
+}
+
+.custom-indicators button {
+  width: 10px;
+  height: 10px;
+  background-color: gray;
+  border-radius: 50%;
+  border: none;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.custom-indicators .active {
+  background-color: white;
+  opacity: 1;
+}
+
