@@ -1,12 +1,12 @@
 <div class="container my-5">
   <h4 class="fw-bold">Materiais Hospitalares</h4>
-  <div class="col-12">
+  <div class="col-12 r">
     <div
       id="carouselExampleDark"
       class="carousel carousel-dark slide"
       data-bs-ride="carousel"
     >
-      <div class="carousel-inner d-block d-sm-none">
+      <div class="carousel-inner d-block d-md-none d-md-none m-5">
         <div
           *ngFor="let item of products; let i = index"
           class="carousel-item"
@@ -19,7 +19,7 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div
-            class="d-none d-sm-grid gap-4"
+            class="d-none d-md-grid gap-4"
             style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))"
           >
             <div *ngFor="let item of products">
