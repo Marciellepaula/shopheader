@@ -1,9 +1,11 @@
 <div class="container my-5">
   <h4 class="fw-bold">Materiais Hospitalares</h4>
   <div class="col-12">
-    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-
-
+    <div
+      id="carouselExampleDark"
+      class="carousel carousel-dark slide"
+      data-bs-ride="carousel"
+    >
       <!-- <div class="carousel-indicators">
         <button
           type="button"
@@ -27,10 +29,13 @@
         ></button>
       </div> -->
 
-
       <div class="carousel-inner d-block d-sm-none">
-        <div *ngFor="let item of products; let i = index" class="carousel-item " [class.active]="i === 0"
-          data-bs-interval="10000">
+        <div
+          *ngFor="let item of products; let i = index"
+          class="carousel-item"
+          [class.active]="i === 0"
+          data-bs-interval="10000"
+        >
           <app-product-card [product]="item"></app-product-card>
         </div>
       </div>
@@ -38,23 +43,32 @@
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="10000">
           <div class="row">
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 gap-5 d-none d-sm-block " *ngFor="let item of products">
+            <div
+              class="col-12 col-sm-6 col-md-4 col-lg-3 gap-5 d-none d-sm-block"
+              *ngFor="let item of products"
+            >
               <app-product-card [product]="item"></app-product-card>
             </div>
           </div>
         </div>
       </div>
 
-
       <div class="carousel-controls">
-        <button class="carousel-control-next custom-carousel-btn custom-indicators button" type="button" data-bs-target="#carouselExampleDark"
-          data-bs-slide="next">
+        <button
+          class="carousel-control-next custom-carousel-btn custom-indicators button"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
           <span class="custom-carousel-icon">→</span>
         </button>
 
-        <button class="carousel-control-prev custom-carousel-btn custom-indicators button " type="button"
-          data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <button
+          class="carousel-control-prev custom-carousel-btn custom-indicators button"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
           <span class="custom-carousel-icon custom-indicators button">←</span>
         </button>
       </div>
