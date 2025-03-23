@@ -1,5 +1,5 @@
 <style>
-  .card-produto-padrao::before {
+  .produto::before {
     position: absolute;
     top: 0;
     left: 0;
@@ -12,7 +12,7 @@
     transition: 0.3s all;
   }
 
-  .card-produto-padrao {
+  .produto {
     position: relative;
     width: 309px;
     height: 393px;
@@ -28,10 +28,20 @@
 </style>
 
 <div class="card product-card border-0 shadow-sm" style="width: 310px">
-  <div class="card-produto-padrao">
+  <div class="produto">
     <div
-      class="d-flex flex-column justify-content-between p-3 mx-auto rounded-4 z-1"
+      class="d-flex flex-column justify-content-between p-1 mx-auto rounded-4 z-1"
     >
+      <span
+        class="position-absolute top-3 end-0 m-4 text-white p-2 rounded-circle"
+        style="
+          background-color: #10404b;
+          transform: scaleX(-1) translateX(-5px);
+        "
+      >
+        🛒
+      </span>
+
       <div
         class="w-100 d-flex justify-content-center align-items-center"
         style="
@@ -50,13 +60,6 @@
           />
         </div>
       </div>
-
-      <span
-        class="position-absolute top-1 start-2 end-0 m-4 text-white p-2 rounded-circle"
-        style="background-color: #10404b; transform: scaleX(-1)"
-      >
-        🛒
-      </span>
     </div>
 
     <div class="card-body text-center z-1">
@@ -72,13 +75,13 @@
           $ Orçamento
         </button>
         <span
-          class="bg-whatsapp rounded-circle p-2 d-flex align-items-center justify-content-center"
+          class="bg-whatsapp p-2 rounded-pill d-flex align-items-center justify-content-center"
           style="
             position: absolute;
             bottom: 10px;
             right: 10px;
             z-index: 2;
-            width: 40px;
+            width: 60px;
             height: 40px;
           "
         >

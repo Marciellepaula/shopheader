@@ -6,29 +6,6 @@
       class="carousel carousel-dark slide"
       data-bs-ride="carousel"
     >
-      <!-- <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carouselExampleDark"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleDark"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleDark"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-      </div> -->
-
       <div class="carousel-inner d-block d-sm-none">
         <div
           *ngFor="let item of products; let i = index"
@@ -41,11 +18,11 @@
 
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <div class="row">
-            <div
-              class="col-12 col-sm-6 col-md-4 col-lg-3 gap-5 d-none d-sm-block"
-              *ngFor="let item of products"
-            >
+          <div
+            class="d-none d-sm-grid gap-4"
+            style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))"
+          >
+            <div *ngFor="let item of products">
               <app-product-card [product]="item"></app-product-card>
             </div>
           </div>
