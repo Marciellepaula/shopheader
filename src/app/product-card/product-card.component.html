@@ -1,28 +1,26 @@
-<div class="card product-card border-0 shadow-sm" style="width: 300px; ">
-
-  <div
-    class="d-flex flex-column justify-content-between p-3 mx-auto rounded-4 "
-  >
+<div class="card product-card border-0 shadow-sm" style="width: 320px">
+  <div class="d-flex flex-column justify-content-between p-3 mx-auto rounded-4">
     <div
       class="w-100 d-flex justify-content-center align-items-center"
       style="
-        height: 180px;
+        height: 200px;
         border-radius: 14px;
         background: #fff;
         overflow: hidden;
-        padding: 20px;
+        padding: 10px;
       "
     >
-    <div class="w-100 d-flex justify-content-center align-items-center" style="height: 180px; border-radius: 14px; background: #fff; overflow: hidden; padding: 10px;">
-      <img src="{{ product.image }}" class="w-75 h-auto object-fit-contain" alt="{{ product.name }}" />
+      <div class="w-100 d-flex justify-content-center align-items-center">
+        <img
+          src="{{ product.image }}"
+          class="w-75 h-auto object-fit-contain"
+          alt="{{ product.name }}"
+        />
+      </div>
     </div>
-
-    </div>
-
-
 
     <span
-      class="position-absolute top-0 end-0 m-4  bg-dark text-white p-2 rounded-circle"
+      class="position-absolute top-0 end-0 m-4 bg-dark text-white p-2 rounded-circle"
     >
       🛒
     </span>
@@ -30,15 +28,26 @@
 
   <div class="card-body text-center">
     <div class="text-center mb-2">
-      <h6 class="fw-bold">     {{ product.name.split(' ')[0] }} <br> {{ product.name.split(' ').slice(1).join(' ') }}   </h6>
+      <h6 class="fw-bold">
+        {{ product.name.split(" ")[0] }} <br />
+        {{ product.name.split(" ").slice(1).join(" ") }}
+      </h6>
     </div>
     <a href="#" class="text-primary text-decoration-none">SAIBA MAIS</a>
-    <div class="d-flex justify-content-center gap-2 mt-3">
+    <div class="d-flex">
       <button class="btn w-75 btn-danger rounded-pill text-nowrap fw-bold">
         $ Orçamento
       </button>
       <span
         class="bg-whatsapp rounded-circle p-2 d-flex align-items-center justify-content-center"
+        style="
+          position: absolute;
+          bottom: 10px;
+          right: 10px;
+          z-index: 2;
+          width: 40px;
+          height: 40px;
+        "
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -55,4 +64,17 @@
       </span>
     </div>
   </div>
+
+  <div
+    style="
+      position: absolute;
+      bottom: -5px;
+      right: -5px;
+      width: 70px;
+      height: 70px;
+      background-color: white;
+      border-top-left-radius: 60%;
+      z-index: 1;
+    "
+  ></div>
 </div>
