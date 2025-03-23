@@ -6,7 +6,9 @@ $custom-colors: (
   "primary-custom": #10404B,
   "secondary-custom": #599AA8,
   "whatsapp": #70AA7D,
+  "shadow1": #ECECEC,
 );
+
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
