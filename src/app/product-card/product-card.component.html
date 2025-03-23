@@ -27,31 +27,20 @@
   }
 </style>
 
-<div class="card product-card border-0 shadow-sm" style="width: 310px">
+<div class="card product-card border-0" style="width: 310px">
   <div class="produto">
     <div
-      class="d-flex flex-column justify-content-between p-1 mx-auto rounded-4 z-1"
+      class="d-flex flex-column justify-content-between p-2 bg-white mx-auto rounded-4 z-1"
     >
-      <span
-        class="position-absolute top-3 end-0 m-4 text-white p-2 rounded-circle"
-        style="
-          background-color: #10404b;
-          transform: scaleX(-1) translateX(-5px);
-        "
-      >
-        🛒
-      </span>
-
       <div
-        class="w-100 d-flex justify-content-center align-items-center"
-        style="
-          height: 200px;
-          border-radius: 14px;
-          background: #fff;
-          overflow: hidden;
-          padding: 20px;
-        "
+        class="w-100 bg-white position-relative d-flex p-2 justify-content-center align-items-center"
+        style="border-radius: 14px; overflow: hidden"
       >
+        <span
+          class="position-absolute top-0 end-0 text-white p-2 rounded-circle bg-primary-custom"
+        >
+          🛒
+        </span>
         <div class="w-100 d-flex justify-content-center align-items-center">
           <img
             src="{{ product.image }}"
