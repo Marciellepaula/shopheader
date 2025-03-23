@@ -1,10 +1,10 @@
-<div class="bg-shadow1 rounded-top-5 rounded-end-5 border-0">
+<div class="bg-shadow1 rounded-top-3 rounded-end-5 border-0">
   <div class="p-3 pb-1">
     <div
       class="d-flex flex-column justify-content-between p-2 bg-white mx-auto rounded-4 z-1"
     >
       <div
-        class="w-100 bg-white position-relative d-flex p-2 justify-content-center align-items-center"
+        class="w-80 bg-white position-relative d-flex p-2 justify-content-center align-items-center"
         style="border-radius: 14px; overflow: hidden"
       >
         <span
@@ -12,7 +12,7 @@
         >
           🛒
         </span>
-        <div class="w-100 d-flex justify-content-center align-items-center">
+        <div class="w-80 d-flex justify-content-center align-items-center">
           <img
             src="{{ product.image }}"
             class="w-75 h-auto object-fit-contain"
@@ -23,7 +23,7 @@
     </div>
 
     <div class="text-center">
-      <div class="text-center mb-2">
+      <div class="text-center mt-4 mb-2">
         <h6 class="fw-bold">
           {{ product.name.split(" ")[0] }} <br />
           {{ product.name.split(" ").slice(1).join(" ") }}

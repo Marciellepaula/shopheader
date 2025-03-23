@@ -1,13 +1,8 @@
 <div class="container my-5">
   <h4 class="fw-bold">Materiais Hospitalares</h4>
-  <div class="col-12 r">
-    <div id="carouselExampleAutoplaying"></div>
-    <div
-      id="carouselExampleDark"
-      class="carousel carousel-dark slide"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-inner d-block d-md-none d-md-none">
+  <div class="col-12">
+    <div id="carouselExampleRide" class="carousel slide">
+      <div class="carousel-inner d-block d-md-none d-md-none m-4 w-75">
         <div
           *ngFor="let item of products; let i = index"
           class="carousel-item"
@@ -34,7 +29,7 @@
         <button
           class="carousel-control-next custom-carousel-btn custom-indicators button"
           type="button"
-          data-bs-target="#carouselExampleDark"
+          data-bs-target="#carouselExampleRide"
           data-bs-slide="next"
         >
           <span class="custom-carousel-icon">→</span>
@@ -43,7 +38,7 @@
         <button
           class="carousel-control-prev custom-carousel-btn custom-indicators button"
           type="button"
-          data-bs-target="#carouselExampleDark"
+          data-bs-target="#carouselExampleRide"
           data-bs-slide="prev"
         >
           <span class="custom-carousel-icon custom-indicators button">←</span>
